@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CHD.StepSlider">
+  <ContentView.Content>
+        <StackLayout x:Name="RootRlt" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+            <AbsoluteLayout x:Name="OptionsRlt" 
+                           HorizontalOptions="FillAndExpand" >
+            </AbsoluteLayout>
+
+            <Slider x:Name="SliderMain"
+                    Minimum="0"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand" 
+                    HeightRequest="40"
+                    ValueChanged="OnSliderValueChanged"
+                    ThumbColor="Blue"
+                    BackgroundColor="White"
+                    MaximumTrackColor="Gray"
+                    MinimumTrackColor="Green"
+                    SizeChanged="SliderMain_SizeChanged"/>
+
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

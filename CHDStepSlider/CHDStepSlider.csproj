@@ -1,7 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>CHD.StepSlider</AssemblyName>
+    <RootNamespace>CHD</RootNamespace>
+    <Authors>Noe Miranda</Authors>
+    <Company>ChihuasDevs</Company>
+    <Description>This is a step slider component for xamarin forms</Description>
+    <Copyright>Copyright (c) 2019 Noé Miranda / ChihuasDevs</Copyright>
+    <PackageLicenseUrl>https://aka.ms/deprecateLicenseUrl</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/josco007/CHDStepSlider.git</PackageProjectUrl>
+    <PackageIconUrl>https://scontent.fntr6-1.fna.fbcdn.net/v/t1.0-9/54520952_2430728617159069_6880800451600580608_n.png?_nc_cat=102&amp;_nc_ht=scontent.fntr6-1.fna&amp;oh=2e2ef08c19d6641c94c919695b734caf&amp;oe=5D12A18D</PackageIconUrl>
+    <RepositoryUrl>https://github.com/josco007/CHDStepSlider.git</RepositoryUrl>
+    <RepositoryType />
+    <PackageReleaseNotes>first release</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="StepSlider.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.583944" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="StepSlider.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
 
 </Project>
