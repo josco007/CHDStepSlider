@@ -182,5 +182,10 @@ namespace CHD
         {
             return _currentPosition;
         }
+
+        public void SetPosition(int position)
+        {
+            SliderMain.Value = position;
+        }
     }
 }
